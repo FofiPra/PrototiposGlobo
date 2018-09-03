@@ -1,0 +1,62 @@
+<div class="wrapper">
+    <!-- Sidebar  -->
+    <nav id="sidebar">
+        <div class="sidebar-header">
+            <h3>Globo Project</h3>
+            <strong>BS</strong>
+        </div>
+        <ul class="list-unstyled components">
+                <li class="active">
+                        <a href="home">
+                            <i class="fas fa-briefcase"></i>
+                            Home
+                        </a>
+                    </li>
+            <li>
+                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                    <i class="fas fa-home"></i>
+                    Proyectos
+                </a>
+                <ul class="collapse list-unstyled" id="homeSubmenu">
+                    <li>
+                        <a href="newProject">Nuevo Proyecto</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#clientSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fas fa-copy"></i>
+                        Clientes
+                    </a>
+                    <ul class="collapse list-unstyled" id="clientSubmenu">
+                        <li>
+                            <a href="newClient">Nuevo Cliente</a>
+                        </li>
+                    </ul>
+                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                    <i class="fas fa-copy"></i>
+                    Recursos
+                </a>
+                <ul class="collapse list-unstyled" id="pageSubmenu">
+                    <li>
+                        <a href="miJuan">JUAN</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+    </nav>
+
+    <!-- Page Content  -->
+    
+    <div id="content">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                    <div>
+                            <router-outlet></router-outlet>
+                    </div>      
+            </div>
+        </nav>
+    </div>
+</div>
